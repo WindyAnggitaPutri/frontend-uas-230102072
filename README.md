@@ -3,7 +3,8 @@ Sistem ini adalah sistem yang dapat membantu mahasiswa dalam mendapatkan KRS. Si
 <hr>
 
 <h3> 📦Kebutuhan Pembuatan Sistem ini </h3>
-🔗 [SI-KRS Database (GitHub)](https://github.com/kristiandimasadiwicaksono/SI-KRS-Backend.git) <br>
+
+🔗 [SI-KRS Backend (GitHub)](https://github.com/kristiandimasadiwicaksono/SI-KRS-Backend.git) <br>
 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaPutri/SI_KRS_Database.git) <br>
 <hr>
 
