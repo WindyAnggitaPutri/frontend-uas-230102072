@@ -1,18 +1,19 @@
-<h1>SISTEM KRS - Tipe Soal C </h1>
+<h1> 🚀SISTEM KRS - Tipe Soal C </h1>
 Sistem ini adalah sistem yang dapat membantu mahasiswa dalam mendapatkan KRS. Sistem ini juga mempermudahkan dalam pengelolaan data KRS yang terdapat dalam Politeknik Negeri Cilacap. <br>
 <hr>
 
-<h3>Kebutuhan Pembuatan Sistem ini </h3>
+<h3> 📦Kebutuhan Pembuatan Sistem ini </h3>
 🔗 [SI-KRS Database (GitHub)](https://github.com/kristiandimasadiwicaksono/SI-KRS-Backend.git) <br>
 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaPutri/SI_KRS_Database.git) <br>
 <hr>
 
-<h3>1. Clone Repository BackEnd</h3> <br>
+<h3> 🔧 1. Clone Repository BackEnd</h3> <br>
+
 1. Membuat Folder di dalam www dengan nama UAS PBF <br>
 2. Lalu buka CMD melalui path folder tersebut  <br>
 3. Git clone repository BackEnd  <br>
 
-    git clone https://github.com/kristiandimasadiwicaksono/SI-KRS-Backend.git
+        git clone https://github.com/kristiandimasadiwicaksono/SI-KRS-Backend.git
 
 4. Setelah itu masuk ke folder BackEnd yang sudah di git clone tadi lalu buka CMD melalui path folder tadi  <br>
 5. Lalu lakukan Composer Install  <br>
@@ -43,7 +44,7 @@ Sistem ini adalah sistem yang dapat membantu mahasiswa dalam mendapatkan KRS. Si
 
         php spark serve
 
-<h3>2. Import Database </h3>
+<h3> 💡 2. Import Database </h3>
 Langkah - Langkah : <br>
 Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaPutri/SI_KRS_Database.git) <br>
 
@@ -54,27 +55,26 @@ Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaP
 5. Lalu pergi ke menu Imposrt, pilih file yang akan di impirt (db_krs.sql)
 6. Klik OK untuk memproses import file db_krs.sql tadi
 
-<h3>3. Mencoba EndPoint API di Postman</h3><br>
-        
+<h3> 🧪 3. Mencoba EndPoint API di Postman</h3><br>      
 1. Sebelumnya pastikan dulu bahwa server Backend berjalan dengan baik dengan menggunakan perintah
 
         php spark serve
         
 2. Setelah itu buka aplikasi Postman
 3. Klik + pada kanan atas, lalu pilih Collection untuk membuat collection uas_mhs dan uas_prodi dengan memilih API Rest Basic
-4. Setelah itu membuat Request beru untuk setiap Get, Post, Put, Delete
-    Prodi:
-    - GET → http://localhost:8080/prodi / http://localhost:8080/prodi/{id}
+4. Setelah itu membuat Request beru untuk setiap Get, Post, Put, Delete <br>
+   Prodi:
+   - GET → http://localhost:8080/prodi / http://localhost:8080/prodi/{id}
     - POST → http://localhost:8080/prodi
     - PUT → http://localhost:8080/prodi/{id}
-    - DELETE → http://localhost:8080/prodi/{id}
-    Mahasiswa :
+    - DELETE → http://localhost:8080/prodi/{id}<br>
+   Mahasiswa :
     - GET → http://localhost:8080/mahasiswa / http://localhost:8080/mahasiswa/{id}
     - POST → http://localhost:8080/mahasiswa
     - PUT → http://localhost:8080/mahasiswa/{id}
     - DELETE → http://localhost:8080/mahasiswa/{id}
       
-<h3>4. Membuat Laravel</h3>
+<h3> 🐛 4. Membuat Laravel</h3>
 
 1. Buka folder UAS PBF tadi, lalu buka cmd di folder itu
 2. Membuat Project Laravel
@@ -88,7 +88,7 @@ Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaP
 
 6. Klik Ctrl lalu klik link itu menggunakan kursor
 
-<h3>5. Menjalankan SI KRS</h3>
+<h3> 📝 5. Menjalankan SI KRS</h3>
 
 1. Menjalankan server Backend
 
@@ -99,41 +99,42 @@ Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaP
         php artisan serve
 
 
-<h3>6. Membuat tampilan laravel dengan Menggunkaan Tailwind</h3>
+<h3> 💻 6. Membuat tampilan laravel dengan Menggunkaan Tailwind</h3>
     
 1. Membuat View dan isinya
 
-    - Contoh isi view Dashboard
-          <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Selamat Datang di SI</title>
-                <script src="https://cdn.tailwindcss.com"></script>
-            </head>
-            <body class="bg-gray-100 h-screen flex font-sans">
+    - Contoh isi view Dashboard <br>
+    
+                  <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Selamat Datang di SI</title>
+                        <script src="https://cdn.tailwindcss.com"></script>
+                    </head>
+                    <body class="bg-gray-100 h-screen flex font-sans">
             
-                <aside class="bg-green-800 text-white w-64 py-6 px-3 flex flex-col">
-                    <div class="mb-8">
-                        <h1 class="text-2xl font-semibold text-center">SI Akademik</h1>
-                        <p class="text-sm text-green-200 text-center">Selamat Datang</p>
-                    </div>
-                    <nav class="flex-grow">
-                        <ul>
-                          <li class="mb-4">
-                                <a href="{{route('Prodi.index')}}" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Data Prodi</a>
-                            </li>
+                    <aside class="bg-green-800 text-white w-64 py-6 px-3 flex flex-col">
+                        <div class="mb-8">
+                            <h1 class="text-2xl font-semibold text-center">SI Akademik</h1>
+                            <p class="text-sm text-green-200 text-center">Selamat Datang</p>
+                        </div>
+                        <nav class="flex-grow">
+                            <ul>
                               <li class="mb-4">
-                                <a href="{{route('Mahasiswa.index')}}" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Data Mahasiswa</a>
-                            </li>
-                            
+                                    <a href="{{route('Prodi.index')}}" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Data Prodi</a>
+                                </li>
+                                  <li class="mb-4">
+                                    <a href="{{route('Mahasiswa.index')}}" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Data Mahasiswa</a>
+                                </li>
+                                
+                
             
-        
-                        </ul>
-                       
-                    </nav>
-                </aside>
+                            </ul>
+                           
+                        </nav>
+                    </aside>
             
                 <main class="flex-grow bg-gray-100 p-8">
                     <div class="bg-white rounded-lg shadow-md p-10">
@@ -452,10 +453,10 @@ Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaP
                 
                 Route::resource('Mahasiswa', MahasiswaController::class);
 
-<h3>7. Push ke Github</h3>
+<h3> 🤝 7. Push ke Github</h3>
 
 1. Buka github yang dimiliki
-2. Lalu buat repository baru dengan nama frontend-uas-230102072
+2. Lalu buat repository baru dengan nama frontend-uas-230102072, tanpa menambahkan README
 3. Setelah itu masuk ke VSCODE, lalu masuk ke terimanl tempat laravel tadi
 4. Inisialisasi Git
 
@@ -478,6 +479,7 @@ Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaP
         git branch -M main
 
 12. Melakukan push untuk file yang ad laravel
+    
         git push -u origin main
 
 
