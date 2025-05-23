@@ -463,9 +463,21 @@ Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaP
    
 6. Tambahkan remote repository dengan nama frontend-uas-230102072
 
-        git remote add origin 
+        git remote add origin https://github.com/WindyAnggitaPutri/frontend-uas-230102072.git
    
-8. a
-9. a
+8. Menmbahkan semua file yang ada di file laravel ini
+
+        git add .
+
+9. Melakukan Commit pertama
+
+        git commit -m "First commit"
+
+10. Lalu setelah itu ubah brach jadi main
+
+        git branch -M main
+
+12. Melakukan push untuk file yang ad laravel
+        git push -u origin main
 
 
