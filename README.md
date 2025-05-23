@@ -47,7 +47,8 @@ Sistem ini adalah sistem yang dapat membantu mahasiswa dalam mendapatkan KRS. Si
 
 <h3> 💡 2. Import Database </h3>
 Langkah - Langkah : <br>
-Link Database : 🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaPutri/SI_KRS_Database.git) <br>
+Link Database : 
+🔗 [SI-KRS Database (GitHub)](https://github.com/WindyAnggitaPutri/SI_KRS_Database.git) <br>
 
 1. Buka link database yang telah disediakan
 2. Lalu download file db_krs.sql
